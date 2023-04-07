@@ -1,0 +1,150 @@
+html {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(185, 75%, 39%);
+    
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+.up-pic {
+    position: absolute;
+    top: -375px;
+    left: -104px;
+    z-index: -1;
+}
+
+.bottom-pic {
+    position: absolute;
+    z-index: -1;
+    bottom: -491px;
+    right: -109px;
+}
+
+/* card */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    min-width: 462px;
+    height: 490px;
+    position: relative;
+}
+
+.pictue-victor {
+    position: absolute;
+    top: 120px;
+    left: 170px;
+    height: 125px;
+    width: auto;
+    border-radius: 5rem;
+    border: 6px solid white;
+}
+
+
+.white-card {
+    height: 310px;
+    background-color: white;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.blue-balls {
+    height: 185px;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+/* Everything in the Card */
+
+.name-alter {
+    display: flex;
+    gap: 0.7rem;
+    justify-content: center;
+    margin-top: 82px;
+}
+
+.person-age {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.city-name {
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 35px;
+}
+
+hr {
+    color: hsl(0, 0%, 100%);
+    height: 0px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-top: 40px;
+}
+
+.description, .numbers {
+    text-align: center;
+}
+
+
+/* == styling == */
+
+/* big font weight */
+.big-weight {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: hsl(229, 23%, 23%);
+}
+
+/* color of font */
+.grey-font {
+    color: hsl(227, 10%, 46%);
+}
+
+@media (max-width: 497px) {
+    .up-pic {
+        position: absolute;
+        top: -693px;
+        left: -621px;
+        z-index: -1;
+    }
+
+    .bottom-pic {
+        position: absolute;
+        z-index: -1;
+        bottom: -509px;
+        right: -777px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        min-width: 462px;
+        height: 490px;
+        position: relative;
+        padding-right: 53px;
+        padding-left: 53px;
+    }
+}
